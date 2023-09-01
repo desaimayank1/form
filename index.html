@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- https://formsubmit.co/el/xusihu  https://formsubmit.co/el/xusihu -->
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form with CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            box-shadow: 10px 10px rgb(121, 128, 131);
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[tye="password"],  
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .success-message {
+            color: #008000;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .button{
+            margin-top: 1vh;
+            margin-left: 40vw;
+        }
+        #password,#newpassword{
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Get in touch</h2>
+       
+        <form action="" method="POST"  >
+            <label for="name">Name:</label>
+            <input onchange="handlechange(value,id)" type="text" id="name" name="name" required>
+
+            <label for="email">email</label>
+            <input onchange="handlechange(value,id)" type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input onchange="handlechange(value,id)" type="password" id="password" name="password" required>
+
+            <label for="password">Confirm Password</label>
+            <input onchange="handlechange(value,id)" type="password" id="newpassword" name="newpassword" required>
+
+
+            <label for="message">aditional details</label>
+            <textarea id="message" name="message" rows="5" ></textarea>
+
+            <input onclick="handleclick(value)" type="submit" value="Submit">
+        </form>
+
+        <div class="success-message" id="successMessage">
+           
+        </div>
+    </div>
+    
+   
+    <script src="index.js"></script>
+</body>
+</html>
+
+</body>
+</html>
